@@ -105,4 +105,6 @@ main {
   color: #fff;
   height: 100%;
   padding: 4vh;
+  line-height: 4vh;
+  font-size: 2.5vh;
 }
