@@ -39,7 +39,7 @@ function App() {
     if (d < 16) {
       tempCol = "#5CCACC";
     } else {
-      tempCol = "#D97250";
+      tempCol = "#FFa54F";
     }
     document.documentElement.style
       .setProperty('--backgroundPrim', tempCol);
