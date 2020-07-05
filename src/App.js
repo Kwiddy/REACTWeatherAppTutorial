@@ -17,7 +17,6 @@ function App() {
       .then(result => {
         setQuery('');
         setWeather(result);
-        console.log(result);
       });
     }
   }
@@ -39,7 +38,7 @@ function App() {
     if (d < 16) {
       tempCol = "#5CCACC";
     } else {
-      tempCol = "#FFa54F";
+      tempCol = "#F5D245";
     }
     document.documentElement.style
       .setProperty('--backgroundPrim', tempCol);
@@ -79,7 +78,11 @@ function App() {
           <b>Wind speed:</b> {weather.wind.speed}mph <br/>
         </div>
         </div>
-        ) : ('')}
+        ) : (
+          <div className="defaultHome">
+            No Location Selected
+          </div>
+        )}
       </main>
     </div>
   );

@@ -6,6 +6,7 @@
 
 :root {
   --backgroundPrim: #fff;
+  --backgroundSec: #4e4e4e;
 }
 
 body {
@@ -110,4 +111,10 @@ main {
   padding: 4vh;
   line-height: 4vh;
   font-size: 2.5vh;
+}
+
+.defaultHome {
+  color: #4e4e4e;
+  text-align: center;
+  line-height: 50vh;
 }
