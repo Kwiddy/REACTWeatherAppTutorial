@@ -34,6 +34,17 @@ function App() {
     return day + " " + date + " " + month + " " + year
   }
 
+  const changeBckgrnd = (d) => {
+    let tempCol = "";
+    if (d < 16) {
+      tempCol = "#5CCACC";
+    } else {
+      tempCol = "#D97250";
+    }
+    document.documentElement.style
+      .setProperty('--backgroundPrim', tempCol);
+  }
+
   return (
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'app warm' : 'app') : 'app'}>
       <main>
@@ -60,7 +71,7 @@ function App() {
         <div className="weather">{weather.weather[0].main}</div>
           </div>
         <div className ="additionalInfo">
-          <b>Feels like:</b> {weather.main.feels_like}°c <br/>
+          <b>Feels like:</b> {weather.main.feels_like}°c {changeBckgrnd(Math.round(weather.main.temp))} <br/>
           <b>Max. Temperature:</b> {weather.main.temp_max}°c <br/>
           <b>Min. Temperature:</b> {weather.main.temp_min}°c <br/>
           <br/> 
