@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Note that you will need to get an API key for "https://api.openweathermap.org/data/2.5/" to implement this program.
+
+This was created as an expansion upon the tutorial provided by Tyler Potts at: https://www.youtube.com/watch?v=GuA0_Z1llYU&t=34s 
+
 ## Available Scripts
 
 In the project directory, you can run:
