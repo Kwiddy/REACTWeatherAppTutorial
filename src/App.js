@@ -59,6 +59,14 @@ function App() {
             </div>
         <div className="weather">{weather.weather[0].main}</div>
           </div>
+        <div className ="additionalInfo">
+          <b>Feels like:</b> {weather.main.feels_like}°c <br/>
+          <b>Max. Temperature:</b> {weather.main.temp_max}°c <br/>
+          <b>Min. Temperature:</b> {weather.main.temp_min}°c <br/>
+          <br/> 
+          <b>Humidity:</b> {weather.main.humidity}% <br/>
+          <b>Wind speed:</b> {weather.wind.speed}mph <br/>
+        </div>
         </div>
         ) : ('')}
       </main>
